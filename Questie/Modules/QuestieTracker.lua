@@ -871,10 +871,6 @@ function QuestieTracker:ADDON_LOADED()
 	end
 	if not QuestieTrackedQuests then
 		QuestieTrackedQuests = {}
-	end
-	-- bye vanilla tracker
-	QuestLogFrame:Hide()
-	QuestLogFrame.Show = function ()
 	end;
 	-- This adds the ability to scale the Worldmap from FULLSCREEN or to a WINDOW if a player isn't using Cargographer or MetaMap.
 	if (QuestieConfig == nil) then return end
