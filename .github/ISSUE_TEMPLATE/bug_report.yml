@@ -1,0 +1,50 @@
+name: Bug report
+description: Create a bug report to help us improve
+body:
+  - type: textarea
+    id: desc
+    attributes:
+      label: Issue description
+      description: |
+        A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce the issue
+      description: |
+        Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What is the expected result?
+      description: |
+        A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What is the actual result?
+      description: |
+        A clear and concise description of what is currently happening.
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional details / screenshots
+      description: |
+        If applicable, add screenshots to help explain your problem.
+      placeholder: |
+        None
+    validations:
+      required: false
